@@ -1,3 +1,10 @@
+import org.junit.Test;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.exceptions.JedisRedirectionException;
+
+import javax.swing.*;
+import java.util.Map;
+
 public class Redis {
     /*
     * redis:非关系型数据库(NOSQL)存储方式为key-value,存放在内存
@@ -10,7 +17,7 @@ public class Redis {
     *   del key 删除指定的key-value
     *   redis数据结构: key-value.key:字符串,value:hash(mpa),String,list(linked),set,sortedset(有序集合)
     *   String 存储: set key value    get key value 删除 del key
-    *   hash: hset key filed value eg. hset person name jack获取 hget person name, hgetall key获取key内所有的内容.删除hdel
+    *   hash: hset key filed value eg. hsret person name jack获取 hget person name, hgetall key获取key内所有的内容.删除hdel
     *   list(支持重复):可添加元素到列表的头部或尾部(lpush从左边添加,rpush从右边添加)
     *         查询 lrang key start stop 从左侧获取第start到stop 指定key的元素
     *         删除: lpop key 从左边删除一个元素,并返回删除的元素
@@ -31,4 +38,49 @@ public class Redis {
     *                   appendfsync everysec    每秒持久化
     *                   appendfsync no    不持久化
     * */
+    @Test
+    public void redisString(){
+        //        1.获取连接,主机,duankou
+        Jedis jedis = new Jedis("localhost",6379);//空参构造:localhost,6379端口
+//            2.操作String
+//        jedis.set("name","20");
+//        jedis.del("name");
+//        System.out.println(jedis.get("name"));
+        //自动过期的String 20s
+        jedis.setex("name",20,"jack");
+        System.out.println(jedis.get("name"));
+    }
+    @Test
+    public void redisMap(){
+        Jedis jedis = new Jedis();
+//        System.out.println(jedis.hgetAll("person"));
+        jedis.hset("person","name","jack");
+        jedis.hset("person","age","22");
+        jedis.hset("person","gender","male");
+        jedis.close();
+        //获取所有键值对,返回值为map
+        Map<String, String> map = jedis.hgetAll("person");
+        //遍历
+        for (String s : map.keySet()) {
+            System.out.println(map.get(s));
+        }
+    }
+    @Test
+    public void redisList(){
+        Jedis jedis  = new Jedis();
+        //链表 左端插入
+        /*jedis.lpush("name","jack","sjack2");
+        jedis.lpush("age","1","2");*/
+        //左侧弹出并返回
+        jedis.lpop("age");
+//        System.out.println(jedis.lrange("age",0,-1));
+
+    }
+    @Test
+    public void redisSet(){
+        Jedis jedis = new Jedis();
+        //set,无序不重复
+        jedis.sadd("language","php","java");
+        System.out.println(jedis.smembers("language"));
+    }
 }
