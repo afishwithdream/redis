@@ -83,4 +83,13 @@ public class Redis {
         jedis.sadd("language","php","java");
         System.out.println(jedis.smembers("language"));
     }
+    @Test
+    public void redisSorted(){
+        Jedis jedis = new Jedis();
+        //key - score - value  score为权重,根据权重排正序
+        jedis.zadd("people",22,"jack1");
+        jedis.zadd("people",2,"jack2");
+        jedis.zadd("people",50,"jack3");
+        System.out.println(jedis.zrange("people",0,-1));
+    }
 }

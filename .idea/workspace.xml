@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/utils/JedisUtils.java" line="38" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="47f88ca8-2533-4acc-99f8-56d89ea41b77" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -32,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Redis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
+            <state relative-caret-position="472">
+              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,7 +47,51 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RedisPool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/utils/JedisUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1022#1023#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/jedis.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +104,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/01fe0b71-a387-4b13-b339-3d86847b8739/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f71ec510-2d78-427a-a641-5b2b37663e0a/console.sql" />
         <option value="$PROJECT_DIR$/src/Redis.java" />
+        <option value="$PROJECT_DIR$/src/utils/jedis.properties" />
+        <option value="$PROJECT_DIR$/src/RedisPool.java" />
+        <option value="$PROJECT_DIR$/src/utils/JedisUtils.java" />
       </list>
     </option>
   </component>
@@ -88,6 +138,12 @@
             <path>
               <item name="redis" type="b2602c69:ProjectViewProjectNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -95,21 +151,6 @@
               <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="redis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="jedis-2.8.1.jar" type="ab9368bb:PsiFileNode" />
             </path>
             <path>
               <item name="redis" type="b2602c69:ProjectViewProjectNode" />
@@ -171,22 +212,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Redis.redisSet">
-    <configuration name="Redis.redisList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RedisPool.test">
+    <configuration name="RedisPool.Pool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="redis" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Redis" />
-      <option name="METHOD_NAME" value="redisList" />
+      <option name="MAIN_CLASS_NAME" value="RedisPool" />
+      <option name="METHOD_NAME" value="Pool" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Redis.redisMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisPool.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RedisPool" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Redis.redisList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="redis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Redis" />
-      <option name="METHOD_NAME" value="redisMap" />
+      <option name="METHOD_NAME" value="redisList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,21 +253,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Redis.redisString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Redis.redisSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="redis" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Redis" />
-      <option name="METHOD_NAME" value="redisString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Redis.testRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Redis" />
-      <option name="METHOD_NAME" value="testRedis" />
+      <option name="METHOD_NAME" value="redisSorted" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisPool.test" />
+        <item itemvalue="JUnit.RedisPool.Pool" />
+        <item itemvalue="JUnit.Redis.redisSorted" />
         <item itemvalue="JUnit.Redis.redisSet" />
         <item itemvalue="JUnit.Redis.redisList" />
-        <item itemvalue="JUnit.Redis.redisMap" />
-        <item itemvalue="JUnit.Redis.redisString" />
-        <item itemvalue="JUnit.Redis.testRedis" />
       </list>
     </recent_temporary>
   </component>
@@ -243,48 +284,47 @@
       <option name="presentableId" value="Default" />
       <updated>1560771434058</updated>
       <workItem from="1560771438036" duration="6546000" />
-      <workItem from="1560937534152" duration="17233000" />
+      <workItem from="1560937534152" duration="20551000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 10m 19s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 01m 14s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 11m 23s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 01m 29s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 12m 14s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 03m 37s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 12m 27s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 10m 10s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 12m 44s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 11m 02s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisMap - 2019.06.21 at 21h 16m 08s.xml">
-      <configuration name="Redis.redisMap" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 11m 36s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisList - 2019.06.21 at 21h 24m 11s.xml">
-      <configuration name="Redis.redisList" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 11m 59s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisList - 2019.06.21 at 21h 25m 42s.xml">
-      <configuration name="Redis.redisList" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 12m 49s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisList - 2019.06.21 at 21h 25m 50s.xml">
-      <configuration name="Redis.redisList" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 12m 57s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Redis_redisSet - 2019.06.21 at 21h 30m 19s.xml">
-      <configuration name="Redis.redisSet" configurationId="JUnit" />
+    <history-entry file="RedisPool_test - 2019.06.21 at 22h 14m 02s.xml">
+      <configuration name="RedisPool.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23779000" />
+    <option name="totallyTimeSpent" value="27097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-28" width="1920" height="1108" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -292,7 +332,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Image Layers" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.16363636" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.16363636" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.49946523" weight="0.32236207" />
@@ -304,7 +344,7 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32913843" />
+      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.32913843" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -373,10 +413,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Redis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
+        <state relative-caret-position="472">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/jedis.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RedisPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/JedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
           </folding>
         </state>
       </provider>
